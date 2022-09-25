@@ -1,5 +1,5 @@
 ---
-title: 'The beginning of your journey to becoming a React Master'
+title: The beginning of your journey to becoming a React Master
 publish_date: 2018-09-06
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 'Why Open Banking is going to change your life?'
+title: Why Open Banking is going to change your life?
 publish_date: 2021-02-17
 ---
 

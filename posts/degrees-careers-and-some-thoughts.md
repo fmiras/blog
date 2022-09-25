@@ -1,5 +1,5 @@
 ---
-title: 'Degrees, careers, and some thoughts.'
+title: Degrees, careers, and some thoughts.
 publish_date: 2017-05-18
 ---
 

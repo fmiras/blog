@@ -1,5 +1,5 @@
 ---
-title: 'Whatever you’re doing, do it with passion!'
+title: Whatever you’re doing, do it with passion!
 publish_date: 2021-12-19
 ---
 

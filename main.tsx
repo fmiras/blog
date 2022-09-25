@@ -38,9 +38,9 @@ blog({
     ga('G-G64GWBMMKR'),
     rewrites({
       '/pluggy-2021-federico': 'https://pluggy.ai/blog/pluggy-2021-federico',
-      '/decentraland-on-now': 'https://decentraland.org/blog/announcements/decentraland-on-now',
       '/decentraland-and-wallet-connect':
-        'https://decentraland.org/blog/announcements/decentraland-and-wallet-connect'
+        'https://decentraland.org/blog/announcements/decentraland-and-wallet-connect',
+      '/decentraland-on-now': 'https://decentraland.org/blog/announcements/decentraland-on-now'
     })
   ]
 })
