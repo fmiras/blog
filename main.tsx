@@ -33,8 +33,11 @@ blog({
   footer: (
     <footer>
       <br />
-      Want to <a href="mailto:miras.federico@gmail.com">contact me?</a> You can encrypt your email
-      using{' '}
+      Want to{' '}
+      <b>
+        <a href="mailto:miras.federico@gmail.com">contact me?</a>
+      </b>{' '}
+      You can encrypt your email using{' '}
       <b>
         <a href="https://keyserver.ubuntu.com/pks/lookup?search=0x575B7F0EE31E840A42FD16A929B90C56E55F7745&amp;fingerprint=on&amp;op=index">
           my PGP public key.
