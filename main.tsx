@@ -1,6 +1,6 @@
 /** @jsx h */
 
-import blog, { ga } from 'blog'
+import blog, { h, ga } from 'blog'
 import { BlogMiddleware, BlogContext } from 'blog/types'
 
 export function rewrites(rewritesMap: Record<string, string>): BlogMiddleware {
@@ -30,7 +30,20 @@ export function rewrites(rewritesMap: Record<string, string>): BlogMiddleware {
 blog({
   title: "Fefo's Blog",
   description: `Hi There! I'm Federico Mirás, you can call me "Fefo". I'm a Tech Entrepreneur, Angel Investor & Hacker. Here I share a few thoughts and challenges I faced during my career.`,
-  // footer: <footer>Your custom footer</footer>,
+  footer: (
+    <footer>
+      <br />
+      Want to <a href="mailto:miras.federico@gmail.com">contact me?</a> You can encrypt your email
+      using{' '}
+      <b>
+        <a href="https://keyserver.ubuntu.com/pks/lookup?search=0x575B7F0EE31E840A42FD16A929B90C56E55F7745&amp;fingerprint=on&amp;op=index">
+          my PGP public key.
+        </a>
+      </b>
+      <br />
+      Fingerprint: <b>575B 7F0E E31E 840A 42FD 16A9 29B9 0C56 E55F 7745</b>
+    </footer>
+  ),
   avatar: 'https://fmiras.com/_next/image?url=%2Fimages%2Fprofile.jpg&w=384&q=75',
   avatarClass: 'rounded-full',
   author: 'Federico Mirás',
