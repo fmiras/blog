@@ -47,7 +47,8 @@ blog({
       Fingerprint: <b>575B 7F0E E31E 840A 42FD 16A9 29B9 0C56 E55F 7745</b>
     </footer>
   ),
-  avatar: 'https://fmiras.com/_next/image?url=%2Fimages%2Fprofile.jpg&w=384&q=75',
+  avatar: 'https://cdn.fmiras.com/avatar.jpg',
+  favicon: 'https://cdn.fmiras.com/favicon.ico',
   avatarClass: 'rounded-full',
   author: 'Federico Mirás',
   middlewares: [
