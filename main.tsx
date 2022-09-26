@@ -1,6 +1,5 @@
 /** @jsx h */
-
-import blog, { h, ga } from 'blog'
+import blog, { h } from 'blog'
 import { BlogMiddleware, BlogContext } from 'blog/types'
 
 export function rewrites(rewritesMap: Record<string, string>): BlogMiddleware {
@@ -27,6 +26,13 @@ export function rewrites(rewritesMap: Record<string, string>): BlogMiddleware {
   }
 }
 
+const gaScript = `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G64GWBMMKR');
+`
+
 blog({
   title: "Fefo's Blog",
   description: `Hi There! I'm Federico Mirás, you can call me "Fefo". I'm a Tech Entrepreneur, Angel Investor & Hacker. Here I share a few thoughts and challenges I faced during my career.`,
@@ -45,6 +51,9 @@ blog({
       </b>
       <br />
       Fingerprint: <b>575B 7F0E E31E 840A 42FD 16A9 29B9 0C56 E55F 7745</b>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G64GWBMMKR" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G64GWBMMKR"></script>
+      <script dangerouslySetInnerHTML={{ __html: gaScript }} />
     </footer>
   ),
   avatar: 'https://cdn.fmiras.com/avatar.jpg',
@@ -52,7 +61,6 @@ blog({
   avatarClass: 'rounded-full',
   author: 'Federico Mirás',
   middlewares: [
-    ga('G-G64GWBMMKR'),
     rewrites({
       '/pluggy-2021-federico': 'https://pluggy.ai/blog/pluggy-2021-federico',
       '/decentraland-and-wallet-connect':
