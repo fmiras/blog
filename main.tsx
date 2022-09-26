@@ -34,8 +34,17 @@ const gaScript = `window.dataLayer = window.dataLayer || [];
 `
 
 blog({
+  author: 'Federico Mirás',
   title: "Fefo's Blog",
+  avatar: 'https://cdn.fmiras.com/avatar.jpg',
+  avatarClass: 'rounded-full',
+  favicon: 'https://cdn.fmiras.com/favicon.ico',
   description: `Hi There! I'm Federico Mirás, you can call me "Fefo". I'm a Tech Entrepreneur, Angel Investor & Hacker. Here I share a few thoughts and challenges I faced during my career.`,
+  links: [
+    { title: 'Email', url: 'mailto:miras.federico@gmail.com' },
+    { title: 'GitHub', url: 'https://github.com/fmiras' },
+    { title: 'Twitter', url: 'https://twitter.com/fefomiras' }
+  ],
   footer: (
     <footer>
       <br />
@@ -56,10 +65,6 @@ blog({
       <script dangerouslySetInnerHTML={{ __html: gaScript }} />
     </footer>
   ),
-  avatar: 'https://cdn.fmiras.com/avatar.jpg',
-  favicon: 'https://cdn.fmiras.com/favicon.ico',
-  avatarClass: 'rounded-full',
-  author: 'Federico Mirás',
   middlewares: [
     rewrites({
       '/pluggy-2021-federico': 'https://pluggy.ai/blog/pluggy-2021-federico',
